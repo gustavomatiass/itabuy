@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+}
+
+.logo img {
+    width: 250px;
+    display: inline;
+}
+.pesquisa {
+    display: flex;
+    display: inline;
+    padding-top: 70px;
+}
+.pesquisa input {
+    width: 350px;
+    height: 40px;
+    display: flex;
+}
+
+.lupa img {
+    width: 35px;
+    margin-top: 70px;
+    display: flex;
+    margin-left: 10px;
+}
