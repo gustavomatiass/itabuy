@@ -1,47 +1,64 @@
-* {
-    margin: auto;
-    padding: 0;
+body, ul {
+    margin: 0px;
+    padding: 0px;
 }
 
-header{
-    display: flex;
-    background-color: rgb(23, 23, 23);
-    height: 150px;
+a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
 }
 
-.logo img {
-    width: 250px;
-    display: inline;
-    margin: 20px;
-}
-.pesquisa {
-    display: flex;
-    display: inline;
-    padding-top: 70px;
-}
-.pesquisa input {
-    width: 360px;
-    height: 50px;
-    display: flex;
-    display: inline;
+a:hover{
+    background-color: rgba(0, 128, 0, 0.139);
 }
 
-button{
-    width: 63px;
-    display: flex;
-    display: inline;
-    margin-top: -22px;
-    padding: 20px;
-    margin-left: -7px;
-    margin-bottom: 8px;
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-form{
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    background: rgb(25, 220, 25);
 }
 
-.liks {
-    text-align: center;
-    margin-top: 70px;
-    margin-left: 500px;
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a {
+    display: block;
+    padding: .5rem;
+} 
+
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width:680px) {
+    #btn-mobile{
+        display: block;
+    }
+    #menu {
+        display: none;
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: rgb(25, 220, 25);
+        height: calc(100vh - 70px);
+        z-index: 1000;
+    }
+    #nav.active #menu{
+        display: block;
+    }
 }
