@@ -3,6 +3,12 @@ body, ul {
     padding: 0px;
 }
 
+header {
+    width: 100%px;
+    height: 100%px;
+    margin: auto;
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -12,8 +18,12 @@ a {
 a:hover{
     background-color: rgba(0, 128, 0, 0.139);
 }
-
+#logo-img {
+    width: 100px;
+}
 #logo {
+    padding-left: -20px;
+    text-align: left;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -31,7 +41,7 @@ a:hover{
 #menu {
     display: flex;
     list-style: none;
-    gap: .5rem;
+    gap: 3.rem;
 }
 
 #menu a {
@@ -42,6 +52,50 @@ a:hover{
 #btn-mobile {
     display: none;
 }
+#pesquisa {
+    
+}
+#pesquisa input {
+    
+    width: 290px;
+    height: 35px;
+    padding-top:-10px ;
+    display: flex;
+    display: inline;
+    font-size: 1.5em;
+}
+#pesquisa input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.buscar {
+    position: relative;
+    background-color: #fff;
+    margin-top: -20;
+    margin: -12px;
+    width: 39px;
+    display: flex;
+    display: inline;
+}
+
+/*slide*/
+
+#produtos {
+    display: flex;
+    flex-direction: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#slide {
+    height: 30px;
+    width: 10px;
+}
+
+#slide img {
+    position: absolute;
+}
+
 
 @media (max-width:880px) {
     
@@ -58,11 +112,23 @@ a:hover{
         visibility: hidden;
         overflow-y: hidden;
     }
+    #pesquisa input {
+        width: 190px;
+        height: 33px;
+        padding-top:-10px ;
+        display: flex;
+        display: inline;
+        font-size: 1.5em;
+    }
     #nav.active #menu{
         height: calc(100vh - 70px);
         visibility: visible;
         overflow: auto;
         
+    }
+    #logo-img {
+        width: 100px;
+        margin-right: 100px;
     }
     #menu a {
         padding: 1rem 0;
