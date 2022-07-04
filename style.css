@@ -1,12 +1,11 @@
 body, ul {
     margin: 0px;
     padding: 0px;
+
 }
 
-header {
-    width: 100%px;
-    height: 100%px;
-    margin: auto;
+#header {
+    width: 1821px;
 }
 
 a {
@@ -81,24 +80,38 @@ a:hover{
 /*slide*/
 
 #produtos {
-    display: flex;
-    flex-direction: center;
-    justify-items: center;
-    align-items: center;
+    
 }
 
 #slide {
-    height: 30px;
-    width: 10px;
+    width: 1600px;
+    height: 35vw;
+    max-width: 2900px;
+
+    position: relative;
 }
 
 #slide img {
+    opacity: 0;
     position: absolute;
+
+    width: 109%;
+    height: 94%;
+    padding: 30px;
+    margin-right: 20px;
+
+
 }
+
 
 
 @media (max-width:880px) {
     
+    #header {
+        width: 100%;
+    }
+    
+
     #menu {
         display: block;
         position: absolute;
