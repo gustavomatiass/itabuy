@@ -16,4 +16,31 @@ function toggleMenu(event) {
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
+let time = 2000,
+    currentImageIndex = 0,
+    images = document
+                .querySelectorAll("#slider img")
+    max = images.length;
 
+function nextImage() {
+
+    currentImageIndex++
+
+    if(currentImageIndex >= max)
+        currentImageIndex = 0
+
+    images[currentImageIndex]
+        .classList.add("seletor")
+}
+
+
+
+
+function start() {
+    setInterval(() => {
+        //troca de image
+        nextImage()
+    }, time)
+}
+
+window.addEventListener("load", start)

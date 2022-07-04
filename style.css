@@ -78,32 +78,31 @@ a:hover{
 }
 
 /*slide*/
-
 #produtos {
-    
+    display: flex;
+    flex-direction: center;
+    justify-items: center;
+    align-items: center;
 }
 
-#slide {
-    width: 1600px;
-    height: 35vw;
-    max-width: 2900px;
-
+#slider {
     position: relative;
 }
 
-#slide img {
-    opacity: 0;
+#slider img {
+    opacity: 1;
+
     position: absolute;
-
-    width: 109%;
-    height: 94%;
     padding: 30px;
-    margin-right: 20px;
-
-
+    width: 1500px;
+    height: 600px;
+    margin: 20px;
+    margin-left: 120px;
 }
 
-
+#slider img.seletor {
+    opacity: 0;
+}
 
 @media (max-width:880px) {
     
