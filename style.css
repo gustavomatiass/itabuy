@@ -86,23 +86,56 @@ a:hover{
 }
 
 #slider {
-    position: relative;
+    position: absolute;
 }
 
 #slider img {
     opacity: 1;
 
     position: absolute;
-    padding: 30px;
-    width: 1500px;
-    height: 600px;
-    margin: 20px;
+    padding: 0px;
+    width: 1600px;
+    height: 700px;
+    margin: 15px;
     margin-left: 120px;
+    transition: opacity 800ms;
+
+
+    display: inline-block;
 }
 
 #slider img.seletor {
     opacity: 0;
 }
+#promoção {
+   
+}
+
+#promoção h1{
+    margin-top: 350px;
+    padding: 600px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(25, 220, 25);
+    font-size: 3em;
+}
+
+#promo {
+   
+    
+}
+
+#promo img { 
+    padding-top: -400px;
+    padding: 30px;
+    margin: -100;
+    margin-right: 80px;
+    width: 400px;
+}
+
+
+
+
+
 
 @media (max-width:880px) {
     

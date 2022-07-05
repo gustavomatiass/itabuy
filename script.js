@@ -16,13 +16,15 @@ function toggleMenu(event) {
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
-let time = 2000,
+let time = 4000,
     currentImageIndex = 0,
     images = document
                 .querySelectorAll("#slider img")
     max = images.length;
 
 function nextImage() {
+    images[currentImageIndex]
+        .classList.remove("seletor")
 
     currentImageIndex++
 
